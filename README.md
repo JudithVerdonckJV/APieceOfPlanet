@@ -17,6 +17,7 @@ While gravity in itself was a fairly quick fix, the fact that the planet was als
 
 ## Tiling a sphere
 This part mainly required research. It took a while, but in the end I found a shape that fit all of our requirements. It isn't a perfect sphere, but comes close enough to pass as one, and the tiles are all the same shape and size, just rotated a bit differently.
+
 ![A Piece of Planet Screenshot](APieceOfPlanet/Images/PentakisDodecahedron.png)
 
 The next part was actually getting one mesh for a tile, and then generating a bunch of copies into place at runtime. Our goal was to have the tiles be different biomes after all, and these biomes needed to be chosen randomly. Luckily, once the right geometry was found, the actual code for this generation wasn't too hard anymore. I used an indexbuffer and a vertexbuffer to define the positions of the vertices of the pentakis dodecahdron, and then went on to calulcate how the tile itself should be located and rotated per polygon.
