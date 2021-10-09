@@ -73,13 +73,13 @@ void ATileManager::BeginPlay()
 		switch ((EBiome)biomeNr)
 		{
 		case EBiome::Forest:
-			tile = GetWorld()->SpawnActor<AForestTile>(ForestTest, transform);
+			tile = GetWorld()->SpawnActor<AForestTile>(ForestTile, transform);
 			break;
 		case EBiome::Desert:
-			tile = GetWorld()->SpawnActor<ADesertTile>(DesertTest, transform);
+			tile = GetWorld()->SpawnActor<ADesertTile>(DesertTile, transform);
 			break;
 		case EBiome::Tundra:
-			tile = GetWorld()->SpawnActor<ATundraTile>(TundraTest, transform);
+			tile = GetWorld()->SpawnActor<ATundraTile>(TundraTile, transform);
 			break;
 		default:
 			break;
