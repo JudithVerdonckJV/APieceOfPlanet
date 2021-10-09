@@ -23,13 +23,11 @@ void UPlanetGravityComponent::BeginPlay()
 
 void UPlanetGravityComponent::ApplyGravity()
 {
-	//if (!m_Owner) return;
 	m_Owner->AddMovementInput(m_Owner->GetActorUpVector(), -1.f);
 }
 
 void UPlanetGravityComponent::ApplyRotation()
 {
-	//if (!m_Owner) return;
 	FRotator rotation = UKismetMathLibrary::MakeRotFromZX(GetOwner()->GetActorLocation() - m_GravityCenter, GetOwner()->GetActorForwardVector());
 	GetOwner()->SetActorRotation(rotation);
 }
