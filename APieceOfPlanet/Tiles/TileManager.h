@@ -37,11 +37,11 @@ protected:
 		TArray<AActor*> m_pTiles;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "tiles")
-		TSubclassOf<class AForestTile> ForestTest;
+		TSubclassOf<class AForestTile> ForestTile;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "tiles")
-		TSubclassOf<class ADesertTile> DesertTest;
+		TSubclassOf<class ADesertTile> DesertTile;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "tiles")
-		TSubclassOf<class ATundraTile> TundraTest;
+		TSubclassOf<class ATundraTile> TundraTile;
 public:	
 	virtual void Tick(float DeltaTime) override;
 
